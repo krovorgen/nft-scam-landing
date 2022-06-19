@@ -1,0 +1,67 @@
+.collection {
+  margin-bottom: 268px;
+
+  @include media($sm) {
+    margin-bottom: 100px;
+  }
+
+  &__inner {
+    padding-left: 70px;
+
+    @include media($lg) {
+      padding-left: 0;
+    }
+  }
+
+  &__title {
+    margin-bottom: 70px;
+    max-width: 630px;
+    font-family: "Times New Roman", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 69px;
+    line-height: 120%;
+    color: #000;
+
+    @include media($sm) {
+      margin-bottom: 20px;
+      font-size: 32px;
+    }
+
+    mark {
+      border-bottom: 5px solid #031cf9;
+      color: #031cf9;
+    }
+  }
+
+  &__wrap {
+    position: relative;
+  }
+
+  &__arrow {
+    position: absolute;
+
+    @include media($md) {
+      display: none;
+    }
+
+    &--1 {
+      right: 422px;
+      top: -126px;
+    }
+
+    &--2 {
+      bottom: -154px;
+    }
+
+    &--3 {
+      right: 581px;
+      bottom: -112px;
+    }
+
+    &--4 {
+      right: 0;
+      bottom: -152px;
+    }
+  }
+}
