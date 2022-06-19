@@ -1,0 +1,50 @@
+.portret {
+  &__wrap {
+    display: flex;
+
+    @include media($sm) {
+      flex-direction: column;
+    }
+  }
+
+  &__left {
+
+  }
+
+  &__right {
+    position: relative;
+    top: 90px;
+    transform: rotate(12deg);
+
+    @include media($sm) {
+      position: static;
+      order: -1;
+    }
+  }
+
+  &__quote {
+    margin-bottom: 12px;
+    padding: 8px 32px;
+    border: 2px dashed #000;
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 140%;
+    color: #000;
+
+    @include media($sm) {
+      font-size: 28px;
+    }
+  }
+
+  &__author {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 140%;
+    text-align: right;
+    color: #000;
+
+    @include media($sm) {
+      font-size: 20px;
+    }
+  }
+}
