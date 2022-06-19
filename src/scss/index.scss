@@ -1,0 +1,18 @@
+@import "base/mixins";
+@import "base/variables";
+@import "libs/reset";
+
+.canvas {
+  display: flex;
+  align-items: end;
+  width: 600px;
+  height: 600px;
+  border: 1px solid #ccc;
+}
+
+.people {
+  display: block;
+  width: 100px;
+  height: 100px;
+  background-color: #000;
+}
