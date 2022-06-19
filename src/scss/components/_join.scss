@@ -1,0 +1,181 @@
+.join {
+  &__inner {
+    padding-top: 239px;
+    padding-bottom: 120px;
+    background-image: url("#{$img-path}join/nft.png"), url("#{$img-path}join/vodopad.png");
+    background-position: left 214px top 204px, left top;
+    background-repeat: no-repeat;
+
+    @include media($xl) {
+      background-position: top left, top left;
+    }
+
+    @include media($sm) {
+      padding-top: 121px;
+      padding-bottom: 60px;
+      background-size: 413px 414px, 201px 443px;
+    }
+  }
+
+  &__wrap {
+    position: relative;
+    margin-left: auto;
+    padding: 70px 78px 84px;
+    width: fit-content;
+    max-width: 810px;
+    background-image: url("#{$img-path}join/1.svg");
+    background-position: top 16px right 16px;
+    background-repeat: no-repeat;
+    background-color: #bfee37;
+
+    @include media($sm) {
+      padding: 24px 16px;
+      background-image: none;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -74px;
+      top: -216px;
+      width: 245px;
+      height: 284px;
+      background-image: url("#{$img-path}join/butterfly.png");
+      background-repeat: no-repeat;
+
+      @include media($sm) {
+        display: none;
+      }
+    }
+  }
+
+  &__title {
+    margin-bottom: 24px;
+    font-weight: 700;
+    font-size: 69px;
+    line-height: 120%;
+    color: #000;
+
+    @include media($sm) {
+      margin-bottom: 16px;
+      font-size: 30px;
+    }
+  }
+
+  &__text {
+    margin-bottom: 24px;
+    font-family: "Comic Neue", cursive;
+    font-weight: 700;
+    font-size: 41px;
+    line-height: 120%;
+    color: #000;
+
+    @include media($sm) {
+      margin-bottom: 16px;
+      font-size: 16px;
+    }
+  }
+
+  &__subtitle {
+    position: relative;
+    margin-bottom: 29px;
+    width: fit-content;
+    font-family: "Comic Neue", cursive;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 104px;
+    line-height: 120%;
+    letter-spacing: 3px;
+    color: #000;
+
+    @include media($sm) {
+      margin-bottom: 4px;
+      font-size: 40px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      right: -32px;
+      top: 0;
+      width: 48px;
+      height: 48px;
+      background-image: url("#{$img-path}join/2.svg");
+      background-repeat: no-repeat;
+
+      @include media($sm) {
+        width: 24px;
+        height: 24px;
+        background-size: cover;
+      }
+    }
+  }
+
+  &__button {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-bottom: 16px solid #fff;
+    font-family: "Inter", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 105px;
+    line-height: 120%;
+    color: #fff;
+    background-color: transparent;
+
+    @include media($sm) {
+      border-bottom-width: 8px;
+      font-size: 40px;
+    }
+
+    &:hover {
+      border-bottom-color: #031cf9;
+      color: #031cf9;
+
+      span {
+        display: block;
+      }
+    }
+
+    span {
+      position: absolute;
+      right: calc(-100% - 44px);
+      top: 11px;
+      display: none;
+      font-family: "Times New Roman", sans-serif;
+      font-weight: 400;
+      font-size: 45px;
+      line-height: 140%;
+      color: #031cf9;
+      transform: rotate(-10.51deg);
+
+      @include media($sm) {
+        right: calc(-100% - 64px);
+        font-size: 24px;
+      }
+    }
+  }
+
+  &__description {
+    margin-left: auto;
+    padding: 24px 80px 0 148px;
+    width: fit-content;
+    max-width: 810px;
+    font-weight: 400;
+    font-size: 41px;
+    line-height: 100%;
+    color: #fc2929;
+    background-image: url("#{$img-path}join/2.svg");
+    background-position: top 24px left 80px;
+    background-repeat: no-repeat;
+
+    @include media($sm) {
+      padding: 24px 0 0 44px;
+      font-size: 16px;
+      background-position: top 24px left;
+      background-size: 24px 24px;
+    }
+  }
+}
