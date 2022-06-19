@@ -1,0 +1,143 @@
+.hero {
+  &__inner {
+    margin-bottom: -86px;
+    padding-top: 48px;
+    padding-bottom: 250px;
+    background-image: url("#{$img-path}hero/bg.png"), linear-gradient(180deg, #f3f3f3 0%, rgba(244, 244, 244, 0) 100%);
+    background-position: top right, top center;
+    background-repeat: no-repeat;
+
+    @include media($sm) {
+      padding-top: 32px;
+      background-size: contain;
+    }
+  }
+
+  &__logo {
+    margin-bottom: 144px;
+    padding-left: 56px;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 120%;
+    color: #031cf9;
+
+    @include media($md) {
+      padding-left: 0;
+    }
+
+    @include media($sm) {
+      margin-bottom: 82px;
+    }
+  }
+
+  &__wrap {
+    margin-left: 56px;
+    padding: 100px 28px 56px;
+    width: fit-content;
+    max-width: 642px;
+    border: 1px dashed #000;
+    background-image: url("#{$img-path}hero/paper.png");
+    background-repeat: no-repeat;
+
+    @include media($md) {
+      margin-left: 0;
+    }
+
+    @include media($sm) {
+      padding: 53px 16px 34px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 69px;
+    line-height: 120%;
+    color: #000;
+
+    @include media($sm) {
+      font-size: 32px;
+    }
+
+    span {
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 50%;
+        height: 8px;
+        background-color: #fc2929;
+        transform: rotate(-17.7deg) translateY(-50%);
+
+        @include media($sm) {
+          height: 4px;
+        }
+      }
+    }
+
+    mark {
+      position: absolute;
+      left: 19px;
+      bottom: 56px;
+      font-family: "Comic Sans MS", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 116px;
+      line-height: 120%;
+      color: #fc2929;
+      transform: rotate(6deg);
+
+      @include media($sm) {
+        bottom: 32px;
+        font-size: 48px;
+      }
+    }
+  }
+
+  &__text {
+    margin-bottom: 84px;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 140%;
+    color: #000;
+
+    @include media($sm) {
+      margin-bottom: 80px;
+      font-size: 20px;
+    }
+  }
+
+  &__button-wrap {
+    position: relative;
+    width: fit-content;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: -38px;
+      z-index: 0;
+      width: 80px;
+      height: 80px;
+      background-image: url("#{$img-path}hero/left-eye.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    &::before {
+      left: 78px;
+    }
+
+    &::after {
+      right: 78px;
+    }
+
+    button {
+      position: relative;
+      z-index: 1;
+    }
+  }
+}
