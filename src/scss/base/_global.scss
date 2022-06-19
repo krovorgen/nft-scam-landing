@@ -30,6 +30,9 @@ body {
 }
 
 .button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   margin: 0;
   padding: 2px 24px;
   min-width: 270px;
