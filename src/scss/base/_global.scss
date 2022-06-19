@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&display=swap");
+
+body {
+  min-height: 100vh;
+  font-family: "Times New Roman", sans-serif;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #181818;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 10px;
+  max-width: 1532px;
+}
+
+.link {
+  border-bottom: 4px solid #000;
+  font-family: "Comic Neue", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 40px;
+  line-height: 120%;
+  color: #000;
+
+  &:hover {
+    border-bottom-color: #031cf9;
+    color: #031cf9;
+  }
+}

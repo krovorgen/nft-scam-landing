@@ -1,0 +1,48 @@
+.footer {
+  &__title {
+    margin-bottom: 32px;
+    font-family: "Comic Neue", sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    text-align: center;
+    color: #000;
+  }
+
+  &__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 120px;
+    width: 320px;
+    height: 320px;
+    border: 8px solid #000;
+    text-align: center;
+
+    @include media($sm) {
+      margin-bottom: 48px;
+    }
+  }
+
+  &__items {
+
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 32px;
+    }
+  }
+
+  &__copyright {
+    margin-bottom: 48px;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 120%;
+    text-align: center;
+    color: #000;
+
+    @include media($sm) {
+      font-size: 32px;
+    }
+  }
+}

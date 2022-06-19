@@ -7,7 +7,7 @@
     "stylelint": "stylelint \"**/*.scss\"",
     "stylelint:fix": "stylelint \"**/*.scss\" --fix",
     "deploy": "gh-pages -d dist",
-    "dev": "parcel -p 3000 --open chrome",
+    "dev": "parcel -p 3000 --no-cache --open chrome",
     "build": "rm -rf dist & parcel build",
     "lint": "eslint . && prettier -c \"**/*.js\" \"**/*.json\" \"**/*.md\" \"**/*.ts\"",
     "fmt": "prettier --write \"**/*.js\" \"**/*.json\" \"**/*.md\" \"**/*.ts\""
