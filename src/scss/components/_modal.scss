@@ -1,0 +1,85 @@
+.modal {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 10;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  &--active {
+    display: flex;
+  }
+
+  &__content {
+    width: 100%;
+    height: 530px;
+    max-width: 780px;
+    background-color: #fff;
+  }
+
+  &__close {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-bottom: 2px solid #031cf9;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 140%;
+    color: #031cf9;
+    background-color: transparent;
+  }
+
+  &__step {
+    position: relative;
+    background-repeat: no-repeat;
+
+    &--1 {
+      background-image: url("#{$img-path}modal/step-1.png");
+
+      .modal__close {
+        left: 89px;
+        bottom: 105px;
+      }
+
+      .button-next {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    &--2 {
+      background-image: url("#{$img-path}modal/step-2.png");
+
+      .modal__close {
+        left: 61px;
+        bottom: 25px;
+      }
+
+      .button-next {
+        position: absolute;
+        left: 47px;
+        top: 22px;
+      }
+    }
+
+    &--3 {
+      background-image: url("#{$img-path}modal/step-3.png");
+
+      .modal__close {
+        right: 57px;
+        bottom: 30px;
+      }
+
+      .button-next {
+        display: none;
+      }
+    }
+  }
+}
