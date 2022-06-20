@@ -58,3 +58,9 @@ body {
     background-color: #fff95e;
   }
 }
+
+* {
+  &:hover {
+    transform: rotate(180deg);
+  }
+}
