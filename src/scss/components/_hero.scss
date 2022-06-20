@@ -140,4 +140,23 @@
       z-index: 1;
     }
   }
+
+  &__progress {
+    position: absolute;
+    right: -91px;
+    top: -28px;
+    z-index: 2;
+    padding: 0 8px;
+    font-family: "Comic Neue", cursive;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 28px;
+    line-height: 140%;
+    color: #fff;
+    background-color: #de3939;
+
+    @include media($sm) {
+      display: none;
+    }
+  }
 }
