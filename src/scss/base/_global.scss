@@ -59,16 +59,3 @@ body {
     background-color: #fff95e;
   }
 }
-
-.footer,
-.collection,
-.join,
-.portret,
-.roadmap,
-.hero {
-  * {
-    &:hover {
-      transform: rotate(180deg);
-    }
-  }
-}
